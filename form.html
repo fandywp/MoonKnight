@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Siswa</title>
+    <style>
+        body {
+            background-color: #0a090f;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 700px;
+            margin: 80px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        hr {
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="file"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: hsl(125, 5%, 40%);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #17153b;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #96C9F4;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FANDY</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="biodata.html">Me!</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="databarang.html">Data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>Data Siswa</h2>
+        <hr>
+        <form>
+            <label for="nis">NIS:</label>
+            <input type="text" id="nis" name="nis" required>
+
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" required>
+            <label for="laki-laki" style="display: inline;">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required>
+            <label for="perempuan" style="display: inline;">Perempuan</label>
+
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" name="jurusan" required>
+                <option value="tjkt">-</option>
+                <option value="tjkt">TJKT</option>
+                <option value="dkv">DKV</option>
+                <option value="pplg">PPLG</option>
+            </select>
+
+            <label for="kelas">Kelas:</label>
+            <select id="kelas" name="kelas" required>
+                <option value="x">-</option>
+                <option value="x">X</option>
+                <option value="xi">XI</option>
+                <option value="xii">XII</option>
+            </select>
+
+            <label>Kemampuan:</label>
+            <input type="checkbox" id="pemrograman" name="kemampuan" value="pemrograman">
+            <label for="pemrograman" style="display: inline;">Pemrograman</label><br>
+            <input type="checkbox" id="desain" name="kemampuan" value="desain">
+            <label for="desain" style="display: inline;">Desain</label><br>
+            <input type="checkbox" id="jaringan" name="kemampuan" value="jaringan">
+            <label for="jaringan" style="display: inline;">Jaringan</label><br>
+            <input type="checkbox" id="editing" name="kemampuan" value="editing">
+            <label for="editing" style="display: inline;">Editing Video</label><br>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" required>
+
+            <div class="button-group">
+                <button type="submit">Simpan</button>
+                <button type="button">Edit</button>
+                <button type="button">Delete</button>
+                <button type="button">Keluar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

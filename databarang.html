@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA BARANG</title>
+   <style>
+    body {
+        background-color: #0a090f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    section {
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        line-height: 1.2; 
+        color: #ffffff;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #5c3f3f;
+    }
+
+    th, td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #4682b4;
+        color: #ffffff;
+    }
+
+    img {
+        max-width: 100px;
+        height: auto;
+    }
+    
+    header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #17153b;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #96C9F4;
+        }
+
+   
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FANDY</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="biodata.html">Me!</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="databarang.html">Data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <section>
+    <p style="font-size: 2em; font-weight: bold; margin-bottom: 5px;">DATA BARANG</p>
+    <p style="font-size: 1em; margin-top: 0;">PT. KARYA MANDIRI</p>
+
+    <table>
+        <tr>
+          <th>No</th>
+          <th>Kode Barang</th>
+          <th>Nama Barang</th>
+          <th>Jumlah Barang</th>
+          <th>Harga Barang</th>
+          <th>Gambar Barang</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>EL109</td>
+          <td>Webcam</td>
+          <td>100</td>
+          <td>Rp 150.000</td>
+          <td><img src="https://resource.logitech.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c922/gallery/c922-gallery-1.png?v=1" alt="WEBCAM"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>AC520</td>
+            <td>Mousepad</td>
+            <td>150</td>
+            <td>Rp 50.000</td>
+            <td><img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//101/MTA-19187029/no_brand_mousepad_hitam_polos_kualitas_bagus-alas_mouse-mouse_pad_full02_dcvgckuw.jpg" alt="MOUSEPAD"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>AC280</td>
+            <td>Headphone</td>
+            <td>90</td>
+            <td>Rp 250.000</td>
+            <td><img src="https://cworld.id/wp-content/uploads/2023/07/JETE-13-PRO-3.jpg" alt="HEADPHONE"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>EL379</td>
+            <td>Speaker</td>
+            <td>100</td>
+            <td>Rp 300.000</td>
+            <td><img src="https://cdn1.bigcommerce.com/server600/bd95c/products/2779/images/4358/Audioengine_P4B_Passive_Bookshelf_Speakers_Black_Cabinet__08662.1395719155.1280.1280.jpg?c=2" alt="SPEAKER"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>EL930</td>
+            <td>Proyektor</td>
+            <td>50</td>
+            <td>Rp 5.000.000</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuSAxQMd-YAJndGtWF_r8KXWK7HEOZxke3Pg&s" alt="PROYEKTOR"></td>
+          </tr>
+      </table>
+  </section>
+</body>
+</html>
